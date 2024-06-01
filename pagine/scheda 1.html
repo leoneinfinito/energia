@@ -18,6 +18,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
+            position: relative; /* Permette il posizionamento assoluto del footer */
         }
         .new-content {
             text-align: center;
@@ -48,7 +49,6 @@
             border: none;
             font-size: 2em;
             cursor: pointer;
-            margin-top: 20px;
             position: absolute;
         }
         .btn-bottom-right:hover, .btn-bottom-left:hover {
@@ -62,6 +62,15 @@
             bottom: 20px;
             left: 20px;
         }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 1em;
+            color: white;
+            padding-bottom: 10px; /* Spazio extra per la scritta */
+        }
     </style>
 </head>
 <body>
@@ -69,7 +78,10 @@
         <h1>Pannelli solari</h1>
         <div class="box">L’impianto fotovoltaico è lo strumento perfetto per autoprodurre energia e risparmiare sui costi della bolletta. Questo sistema si serve di energia completamente rinnovabile e inesauribile, rivelandosi green ed eco-friendly. Indicato per chi sta acquistando una nuova casa o per chi la sta ristrutturando, il fotovoltaico è la fonte di energia più adatta in ambito residenziale. Vediamo allora perché scegliere di sfruttare l’energia solare, quanto è ecosostenibile questa scelta e quali sono vantaggi e svantaggi del fotovoltaico.</div>
         <button class="btn-bottom-right" onclick="window.location.href='scheda 2.html'">Avanti</button>
-        <button class="btn-bottom-left" onclick="window.location.href='../index.html'">Indietro</button>
+        <button class="btn-bottom-left" onclick="window.location.href='../start.html'">Indietro</button>
+    </div>
+    <div class="footer">
+        by Samuele Pelella
     </div>
 </body>
 </html>

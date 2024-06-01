@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
         }
         body {
-            background-image: url('immagini/sfondo\ fine.jpg'); /* Sostituisci 'url_dell_immagine' con il percorso dell'immagine desiderata */
+            background-image: url('immagini/sfondo fine.jpg'); /* Corretto il percorso dell'immagine */
             background-size: cover; /* Sfondo copre l'intero schermo */
             background-repeat: no-repeat; 
             background-position: center;
@@ -20,6 +20,7 @@
             text-align: center;
             color: white;
             font-size: 4em;
+            position: relative; /* Permette il posizionamento assoluto del bottone */
         }
         div {
             font-size: 2em; /* Ridimensiona la dimensione del testo */
@@ -41,6 +42,15 @@
         .btn-bottom-left:hover {
             background-color: darkred;
         }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.3em; /* Ridotto ulteriormente il font-size per rendere il testo più piccolo */
+            color: white;
+            padding-bottom: 10px; /* Spazio extra per la scritta */
+        }
     </style>
 </head>
 <body>
@@ -48,5 +58,8 @@
         Fine
     </div>
     <button class="btn-bottom-left" onclick="window.location.href='scheda 2.html'">Indietro</button>
+    <div class="footer">
+        by Samuele Pelella
+    </div>
 </body>
 </html>
