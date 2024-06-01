@@ -24,8 +24,22 @@
         div {
             font-size: 2em; /* Ridimensiona la dimensione del testo */
             font-weight: bold; /* Rendi il testo in grassetto */
-            color: rgb(255, 255, 255); /* Cambia il colore del testo in nero */
+            color: rgb(255, 255, 255); /* Cambia il colore del testo in bianco */
             padding: 10px; /* Aggiungi spazio intorno al testo per rendere il colore di sfondo più evidente */
+        }
+        .btn-bottom-left {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px; /* Ridotto il padding per rendere il bottone più piccolo */
+            border: none;
+            font-size: 1em; /* Ridotto il font-size per rendere il bottone più piccolo */
+            cursor: pointer;
+        }
+        .btn-bottom-left:hover {
+            background-color: darkred;
         }
     </style>
 </head>
@@ -33,5 +47,6 @@
     <div>
         Fine
     </div>
+    <button class="btn-bottom-left" onclick="window.location.href='scheda 2.html'">Indietro</button>
 </body>
 </html>

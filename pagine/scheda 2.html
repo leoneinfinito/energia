@@ -41,7 +41,7 @@
             max-width: 800px; /* Limita la larghezza della scatola */
             text-align: left; /* Testo allineato a sinistra */
         }
-        .btn-bottom-right {
+        .btn-bottom-right, .btn-bottom-left {
             background-color: red;
             color: white;
             padding: 20px 40px;
@@ -49,9 +49,18 @@
             font-size: 2em;
             cursor: pointer;
             margin-top: 20px;
+            position: absolute;
         }
-        .btn-bottom-right:hover {
+        .btn-bottom-right:hover, .btn-bottom-left:hover {
             background-color: darkred;
+        }
+        .btn-bottom-right {
+            bottom: 20px;
+            right: 20px;
+        }
+        .btn-bottom-left {
+            bottom: 20px;
+            left: 20px;
         }
     </style>
 </head>
@@ -61,6 +70,7 @@
         <div class="box">L’energia prodotta dall’acqua può avere nomi diversi – idroelettrica, idraulica o idrica – ma è la stessa e rappresenta comunque la fonte rinnovabile più importante al mondo.
             Infatti, secondo l’Agenzia Internazionale per l’Energia Rinnovabile (IRENA) la capacità degli impianti è oggi superiore a tutte le altre: eolica, solare, geotermica eccetera.</div>
         <button class="btn-bottom-right" onclick="window.location.href='fine.html'">Avanti</button>
+        <button class="btn-bottom-left" onclick="window.location.href='scheda 1.html'">Indietro</button>
     </div>
 </body>
 </html>
