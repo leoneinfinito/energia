@@ -42,6 +42,20 @@
         .btn-bottom-left:hover {
             background-color: darkred;
         }
+        .btn-bottom-left-second {
+            position: absolute;
+            bottom: 20px;
+            left: 180px; /* Posizionamento per evitare sovrapposizione con il primo bottone */
+            background-color: red;
+            color: white;
+            padding: 10px 20px; /* Ridotto il padding per rendere il bottone più piccolo */
+            border: none;
+            font-size: 1em; /* Ridotto il font-size per rendere il bottone più piccolo */
+            cursor: pointer;
+        }
+        .btn-bottom-left-second:hover {
+            background-color: darkred;
+        }
         .footer {
             position: absolute;
             bottom: 0;
@@ -58,8 +72,10 @@
         Fine
     </div>
     <button class="btn-bottom-left" onclick="window.location.href='scheda 2.html'">Indietro</button>
+    <button class="btn-bottom-left-second" onclick="window.location.href='..index.html'">Torna all'inizio</button>
     <div class="footer">
         by Samuele Pelella
     </div>
 </body>
 </html>
+
